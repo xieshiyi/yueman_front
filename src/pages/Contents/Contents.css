@@ -1,0 +1,190 @@
+.overhidden {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* 顶部海报 */
+.header {
+    position: relative;
+    height: 422px;
+}
+/* 返回按钮 */
+.header .bd {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background: url(https://static3w.kuaikanmanhua.com/static/img/webmobile/icon-back2_61f67ea.png) no-repeat center /32px rgba(0,0,0,.6);
+    border-radius: 60px;
+    left: 32px;
+    top: 40px;
+}
+.header .hd img {
+    width: 100%;
+    vertical-align: middle;
+}
+.header .mask {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: url(https://static3w.kuaikanmanhua.com/static/img/mobile/icon_cover_mask_6352fca.png) repeat-x 0 100%;
+    background-size: contain;
+    width: 100%;
+    height: 240px;
+}
+.header .ft {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+}
+/* 标题 */
+.header .ft .ft-title {
+    line-height: 40px;
+}
+.header .ft .ft-title span {
+    width: 100%;
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0 24px;
+    font-weight: bold;
+}
+.header .ft .ft-content {
+    padding: 16px 0;
+}
+.header .ft .ft-content div {
+    float: left;
+}
+.header .ft .ft-content .ft-content-follow span {
+    width: 326px;
+    padding-left: 24px;
+    display: block;
+}
+
+.header .ft .ft-content span {
+    display: inline-block;
+    font-size: 32px;
+    color: #d0cfd0;
+}
+.header .ft .ft-content .info {
+    float: right;
+    height: 48px;
+}
+.header .ft .ft-content .ft-content-praise {
+    padding: 0px 20px;
+    height: 48px;
+    line-height: 52px;
+}
+.header .ft .ft-content .ft-content-praise span {
+    max-width: 104px;
+    padding: 0 0 0 48px;
+    background: url(https://static3w.kuaikanmanhua.com/static/img/webmobile/icon-praise-white-v2_308ee48.png) no-repeat 0 0;
+    background-size: 36px;
+    line-height: 32px;
+}
+.header .ft .ft-content .ft-content-message {
+    padding-right: 16px;
+    height: 48px;
+    line-height: 52px;
+}
+.header .ft .ft-content .ft-content-message span {
+    max-width: 104px;
+    padding: 0 0 0 48px;
+    background: url(https://static3w.kuaikanmanhua.com/static/img/webmobile/icon-message-v2_6936d3f.png) no-repeat 0 0;
+    background-size: 36px;
+    line-height: 32px;
+}
+.clearfix:after, .clx:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+/* 操作条，控制目录顺序是正序还是倒叙 */
+.operator{
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background: #FAFCFC;
+    height: 90px;
+    /* border-bottom: 1px solid #e5e5e5; */
+    color: #aaaaaa;
+    font-size: 28px;
+    line-height: 90px;
+    text-align: left;
+    padding: 0 20px;
+}
+.operator .btn{
+    float: right;
+}
+/* 目录样式 */
+ul {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0;
+}
+.content-container ul li {
+    width: 100%;
+    padding: 0px;
+    /* border-bottom: 1px solid #e5e5e5; */
+}
+.content-container .item {
+    padding: 20px;
+    text-align: left;
+}
+/* 左边的样式 */
+.content-container .item .item-left {
+    width: 244px;
+    height: 138px;
+    float: left;
+    border: 1px solid #eee;
+}
+/* 左边图片 */
+.content-container .item .item-left img{
+    width: 100%;
+    height: 100%;
+}
+/* 右边的样式 */
+.content-container .item .item-right {
+    height: 140px;
+    padding-left: 260px;
+    position: relative;
+    font-size: 36px;
+    line-height: 57.6px;
+}
+/* 标题 */
+.content-container .item .item-right .title{
+    margin: 0;
+}
+/* 信息 */
+.content-container .item .item-right .info {
+    line-height: 32px;
+    width: 440px;
+    padding-top: 32px;
+}
+/* 更新 */
+.content-container .item .item-right .info .info-update {
+    position: relative;
+    display: inline-block;
+    font-size: 32px;
+    color: #999;
+}
+/* 点赞 */
+.content-container .item .item-right .info .praise {
+    float: right;
+}
+/* 点赞数 */
+.content-container .item .item-right .info .info-cnt {
+    display: inline-block;
+    font-size: 32px;
+    color: #999;
+    vertical-align: bottom;
+    max-width: 104px;
+}

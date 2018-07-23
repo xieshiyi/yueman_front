@@ -1,0 +1,16 @@
+import $http from '../utils/http'
+const CommonService = {}
+// 获取书籍列表
+CommonService.getBookList = function () {
+  return $http.post('/katong/api/book/list')
+}
+// 获取某一本书的目录
+CommonService.getBookContents = function (_id, sort) {
+  return $http.post('/katong/api/book/chapterList', {bookid: _id, sort: sort})
+}
+// 获取某一话
+CommonService.getBookDetails = function (_id) {
+  return $http.post('/katong/api/chapter/detail', {id: _id})
+}
+export default CommonService
+

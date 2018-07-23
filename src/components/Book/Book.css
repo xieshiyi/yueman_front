@@ -1,0 +1,32 @@
+/* 漫画封面图 */
+.book{
+    width: 230px;
+    height: 320px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.book .book_image{
+    height: 100%;
+    position:absolute;
+    left: 0;
+    clip:rect(0px 230px 320px 0px);
+}
+/* 书籍标题 */
+.tit{
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 6px;
+    box-sizing: border-box;
+    z-index: 22;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    font-size: 25px;
+}
