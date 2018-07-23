@@ -8,11 +8,18 @@
     </div>
     <!-- 内容 -->
     <div class="content" v-loading.fullscreen.lock="fullscreenLoading">
-    <template v-for="item in detail.content_images">
-        <img :src="item" :key="item"/>
-    </template>
+      <template v-for="item in detail.content_images">
+          <img v-lazy="item" :key="item"/>
+      </template>
+    </div>
+    <!-- 上一话、下一话等操作 -->
+    <div class="operator">
+      <div class="operator_top"></div>
+      <div class="operator_bottom">
+        <div v-on:click="goPrev">上一篇</div>
+        <div v-on:click="goNext">下一篇</div>
       </div>
-
+    </div>
   </div>
 </template>
 <script>
@@ -33,16 +40,35 @@ export default {
       let t = this;
       this.fullscreenLoading = true
       CommonService.getBookDetails(t.$route.params.id).then(({data}) => {
-        t.detail = data.data.chapter[0]
+        t.detail = data.data.chapter
         this.fullscreenLoading = false
       });
     },
     goback: function() {
         this.$router.go(-1)
+    },
+    goPrev: function() {
+      let t = this;
+      this.fullscreenLoading = true
+      CommonService.getBookDetailsByNoAndId(t.detail.bookid, t.detail.no-1).then(({data}) => {
+        t.detail = data.data.chapter
+        this.fullscreenLoading = false
+      });
+    },
+    goNext: function() {
+      let t = this;
+      this.fullscreenLoading = true
+      CommonService.getBookDetailsByNoAndId(t.detail.bookid, t.detail.no+1).then(({data}) => {
+        t.detail = data.data.chapter
+        this.fullscreenLoading = false
+      });
     }
   },
   created: function() {
     this._getDetail()
+  },
+  updated() {
+    window.scroll(0, 0);
   }
 }
 </script>

@@ -17,7 +17,7 @@ export default new Router({
       }
     },
     {
-      path: '/contents/:bookname/:bookid',
+      path: '/contents/:bookid',
       name: 'Contents',
       component: Contents,
       meta: {

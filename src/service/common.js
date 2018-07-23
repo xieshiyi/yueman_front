@@ -12,5 +12,9 @@ CommonService.getBookContents = function (_id, sort) {
 CommonService.getBookDetails = function (_id) {
   return $http.post('/katong/api/chapter/detail', {id: _id})
 }
+// 根据no和bookid获取下一话或者上一话的详情
+CommonService.getBookDetailsByNoAndId = function (_id, no) {
+  return $http.post('/katong/api/chapter/detail', {bookid: _id, no: no})
+}
 export default CommonService
 

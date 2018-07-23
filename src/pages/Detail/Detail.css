@@ -43,3 +43,22 @@
 .content img{
   width: 100%;
 }
+/* 操作栏 */
+.operator .operator_top, .operator .operator_bottom{
+  height: 100px;
+  border-bottom: 1px solid #e2dcdc;
+}
+.operator .operator_bottom{
+  display: flex;
+  font-size: 34px;
+  text-align: center;
+  line-height: 100px;
+  padding: 25px 0;
+}
+.operator .operator_bottom div{
+  flex: 1;
+}
+.operator .operator_bottom div:nth-child(1){
+  border-right: 1px solid #d6d9dc;
+  box-sizing: border-box;
+}

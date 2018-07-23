@@ -9,7 +9,7 @@
     <!-- 书本 -->
       <div class="book-container"  v-loading.fullscreen.lock="fullscreenLoading">
         <template v-for="item in list">
-          <a v-bind:href="'#/contents/' +item.name + '/' + item._id" :key="item._id"><book :item="item"/></a>
+          <a v-bind:href="'#/contents/' + item._id" :key="item._id"><book :item="item"/></a>
         </template>
       </div>
   </div>
