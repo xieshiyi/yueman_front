@@ -25,10 +25,10 @@
           </div>
         </div>
       </div>
-	  </div>
+    </div>
     <!-- 顺序选择，倒叙还是正序 -->
     <div class="operator">
-      连载中<span class="btn" v-on:click="changeSort" v-loading.fullscreen.lock="fullscreenLoading">{{sort === -1 ? '倒叙' : '正序'}}</span>
+      连载中<span class="btn" v-on:click="changeSort" v-loading.fullscreen.lock="fullscreenLoading">{{sort === -1 ? '倒序' : '正序'}}</span>
     </div>
     <!-- 目录 -->
     <template>

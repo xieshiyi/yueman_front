@@ -24,7 +24,6 @@
 </template>
 <script>
 import CommonService from "@/service/common.js"
-import book from "@/components/Book/Book"
 export default {
   name: 'Contents',
   data () {
