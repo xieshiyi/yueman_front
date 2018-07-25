@@ -2,25 +2,25 @@
 .menu-bar {
   position: relative;
   background-color: #f8f7f7;
-  font-size: 40px;
+  font-size: 2rem;
   border-bottom: 1px solid rgba(208,208,208,1);
 }
 .menu-bar .back {
   display: block;
-  width: 48px;
-  height: 48px;
+  width: 2.4rem;
+  height: 2.4rem;
   position: absolute;
   background: url(https://static3w.kuaikanmanhua.com/static/img/mobile/icon_back_dd1086f.png) no-repeat 0 0;
   background-size: contain;
-  left: 32px;
-  top: 28px;
+  left: 1.6rem;
+  top: 1.4rem;
   text-indent: -9999px;
 }
 .menu-bar .tit {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  padding: 24px 184px 24px 104px;
+  padding: 1.2rem 9.2rem 1.2rem 5.2rem;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
@@ -29,11 +29,11 @@
 }
 .menu-bar .goto {
   display: block;
-  width: 80px;
-  height: 64px;
+  width: 4rem;
+  height: 3.2rem;
   position: absolute;
-  right: 16px;
-  top: 24px;
+  right: .8rem;
+  top: 1.2rem;
   color: #ffba15;
 }
 /* 内容 */
@@ -46,15 +46,15 @@
 }
 /* 操作栏 */
 .operator .operator_top, .operator .operator_bottom{
-  height: 100px;
+  height: 5rem;
   border-bottom: 1px solid #e2dcdc;
 }
 .operator .operator_bottom{
   display: flex;
-  font-size: 34px;
+  font-size: 1.7rem;
   text-align: center;
-  line-height: 100px;
-  padding: 25px 0;
+  line-height:5rem;
+  padding: 1.25rem 0;
 }
 .operator .operator_bottom div{
   flex: 1;

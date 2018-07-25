@@ -1,8 +1,8 @@
 /* 漫画封面图 */
 .book{
-    width: 230px;
-    height: 320px;
-    margin-bottom: 15px;
+    width: 11rem;
+    height: 16rem;
+    margin-bottom: .75rem;
     position: relative;
 }
 
@@ -10,7 +10,7 @@
     height: 100%;
     position:absolute;
     left: 0;
-    clip:rect(0px 230px 320px 0px);
+    clip:rect(0 11rem 16rem 0);
 }
 /* 书籍标题 */
 .tit{
@@ -19,14 +19,14 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 30px;
-    line-height: 30px;
-    padding: 0 6px;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    padding: 0 .3rem;
     box-sizing: border-box;
     z-index: 22;
     white-space: nowrap;
     overflow: hidden;
     -webkit-text-overflow: ellipsis;
     text-overflow: ellipsis;
-    font-size: 25px;
+    font-size: 1.25rem;
 }

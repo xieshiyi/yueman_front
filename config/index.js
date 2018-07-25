@@ -11,7 +11,7 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      "/katong": "http://localhost:6160"
+      "/api": "http://localhost:6160/katong"
     },
 
     // Various Dev Server settings

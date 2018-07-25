@@ -6,17 +6,17 @@
 /* 顶部海报 */
 .header {
     position: relative;
-    height: 422px;
+    height: 21.1rem;
 }
 /* 返回按钮 */
 .header .bd {
-    width: 80px;
-    height: 80px;
+    width: 4rem;
+    height: 4rem;
     position: absolute;
-    background: url(https://static3w.kuaikanmanhua.com/static/img/webmobile/icon-back2_61f67ea.png) no-repeat center /32px rgba(0,0,0,.6);
-    border-radius: 60px;
-    left: 32px;
-    top: 40px;
+    background: url(https://static3w.kuaikanmanhua.com/static/img/webmobile/icon-back2_61f67ea.png) no-repeat center /1.6rem rgba(0,0,0,.6);
+    border-radius: 3rem;
+    left: 1.6rem;
+    top: 2rem;
 }
 .header .hd img {
     width: 100%;
@@ -29,7 +29,7 @@
     background: url(https://static3w.kuaikanmanhua.com/static/img/mobile/icon_cover_mask_6352fca.png) repeat-x 0 100%;
     background-size: contain;
     width: 100%;
-    height: 240px;
+    height: 12rem;
 }
 .header .ft {
     width: 100%;
@@ -39,61 +39,61 @@
 }
 /* 标题 */
 .header .ft .ft-title {
-    line-height: 40px;
+    line-height: 2rem;
 }
 .header .ft .ft-title span {
     width: 100%;
     display: inline-block;
-    font-size: 40px;
+    font-size: 2rem;
     color: #fff;
     box-sizing: border-box;
-    padding: 0 24px;
+    padding: 0 1.2rem;
     font-weight: bold;
 }
 .header .ft .ft-content {
-    padding: 16px 0;
+    padding: .8rem 0;
 }
 .header .ft .ft-content div {
     float: left;
 }
 .header .ft .ft-content .ft-content-follow span {
-    width: 326px;
-    padding-left: 24px;
+    width: 16.3rem;
+    padding-left: 1.2rem;
     display: block;
 }
 
 .header .ft .ft-content span {
     display: inline-block;
-    font-size: 32px;
+    font-size: 1.6rem;
     color: #d0cfd0;
 }
 .header .ft .ft-content .info {
     float: right;
-    height: 48px;
+    height: 2.4rem;
 }
 .header .ft .ft-content .ft-content-praise {
-    padding: 0px 20px;
-    height: 48px;
-    line-height: 52px;
+    padding: 0 1rem;
+    height: 2.4rem;
+    line-height: 2.6rem;
 }
 .header .ft .ft-content .ft-content-praise span {
-    max-width: 104px;
-    padding: 0 0 0 48px;
+    max-width: 5.2rem;
+    padding: 0 0 0 2.4rem;
     background: url(https://static3w.kuaikanmanhua.com/static/img/webmobile/icon-praise-white-v2_308ee48.png) no-repeat 0 0;
-    background-size: 36px;
-    line-height: 32px;
+    background-size: 1.8rem;
+    line-height: 1.6rem;
 }
 .header .ft .ft-content .ft-content-message {
-    padding-right: 16px;
-    height: 48px;
-    line-height: 52px;
+    padding-right: .8rem;
+    height: 2.4rem;
+    line-height: 2.6rem;
 }
 .header .ft .ft-content .ft-content-message span {
-    max-width: 104px;
-    padding: 0 0 0 48px;
+    max-width: 5.2rem;
+    padding: 0 0 0 2.4rem;
     background: url(https://static3w.kuaikanmanhua.com/static/img/webmobile/icon-message-v2_6936d3f.png) no-repeat 0 0;
-    background-size: 36px;
-    line-height: 32px;
+    background-size: 1.8rem;
+    line-height: 1.6rem;
 }
 .clearfix:after, .clx:after {
     content: '\0020';
@@ -109,13 +109,13 @@
     top: 0;
     z-index: 999;
     background: #FAFCFC;
-    height: 90px;
+    height: 4.5rem;
     /* border-bottom: 1px solid #e5e5e5; */
     color: #aaaaaa;
-    font-size: 28px;
-    line-height: 90px;
+    font-size: 1.4rem;
+    line-height: 4.5rem;
     text-align: left;
-    padding: 0 20px;
+    padding: 0 1rem;
 }
 .operator .btn{
     float: right;
@@ -126,23 +126,23 @@ ul {
     list-style-type: disc;
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
     -webkit-padding-start: 0;
 }
 .content-container ul li {
     width: 100%;
-    padding: 0px;
+    padding: 0;
     /* border-bottom: 1px solid #e5e5e5; */
 }
 .content-container .item {
-    padding: 20px;
+    padding: 1rem;
     text-align: left;
 }
 /* 左边的样式 */
 .content-container .item .item-left {
-    width: 244px;
-    height: 138px;
+    width: 12.2rem;
+    height: 6.9rem;
     float: left;
     border: 1px solid #eee;
 }
@@ -153,11 +153,11 @@ ul {
 }
 /* 右边的样式 */
 .content-container .item .item-right {
-    height: 140px;
-    padding-left: 260px;
+    height: 7rem;
+    padding-left: 13rem;
     position: relative;
-    font-size: 36px;
-    line-height: 57.6px;
+    font-size: 1.8rem;
+    line-height: 2.88rem;
 }
 /* 标题 */
 .content-container .item .item-right .title{
@@ -165,15 +165,15 @@ ul {
 }
 /* 信息 */
 .content-container .item .item-right .info {
-    line-height: 32px;
-    width: 440px;
-    padding-top: 32px;
+    line-height:1.6rem;
+    width: 22rem;
+    padding-top: 1.6rem;
 }
 /* 更新 */
 .content-container .item .item-right .info .info-update {
     position: relative;
     display: inline-block;
-    font-size: 32px;
+    font-size: 1.6rem;
     color: #999;
 }
 /* 点赞 */
@@ -183,8 +183,8 @@ ul {
 /* 点赞数 */
 .content-container .item .item-right .info .info-cnt {
     display: inline-block;
-    font-size: 32px;
+    font-size: 1.6rem;
     color: #999;
     vertical-align: bottom;
-    max-width: 104px;
+    max-width: 5.2rem;
 }

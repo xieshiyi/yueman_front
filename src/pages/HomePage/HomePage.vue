@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- banner -->
-    <el-carousel trigger="click" height="300px">
+    <el-carousel trigger="click" height="15rem">
       <el-carousel-item v-for="item in 4" :key="item._id">
 
       </el-carousel-item>

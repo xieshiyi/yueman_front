@@ -1,6 +1,6 @@
 <template>
     <div class="book">
-      <img :src="item.cover_image" class="book_image" />
+      <img v-lazy="item.cover_image" class="book_image" />
       <span class="tit">{{item.name}}</span>
     </div>
 </template>
