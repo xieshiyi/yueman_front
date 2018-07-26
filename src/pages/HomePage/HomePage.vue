@@ -6,12 +6,19 @@
 
       </el-carousel-item>
     </el-carousel>
+    <!-- 菜单 -->
+    <div class="menu">
+      <a v-bind:href="'#/dreams'"><div class="menu-item"><i class="el-icon-date"></i><span class="label">今日更新</span></div></a>
+      <a v-bind:href="'#/dreams'"><div class="menu-item"><i class="el-icon-goods"></i><span class="label">心愿单</span></div></a>
+      <a v-bind:href="'#/dreams'"><div class="menu-item"><i class="el-icon-star-off"></i><span class="label">上新期待</span></div></a>
+    </div>
     <!-- 书本 -->
-      <div class="book-container"  v-loading.fullscreen.lock="fullscreenLoading">
-        <template v-for="item in list">
-          <a v-bind:href="'#/contents/' + item._id" :key="item._id"><book :item="item"/></a>
-        </template>
-      </div>
+    <p>最好看的，都在这里</p>
+    <div class="book-container"  v-loading.fullscreen.lock="fullscreenLoading">
+      <template v-for="item in list">
+        <a v-bind:href="'#/contents/' + item._id" :key="item._id"><book :item="item"/></a>
+      </template>
+    </div>
   </div>
 </template>
 <script>
@@ -57,7 +64,8 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: #000000;
+  text-decoration: none;
 }
 .el-carousel__item h3 {
   color: #475669;

@@ -5,3 +5,28 @@
     justify-content: space-evenly;
     margin-top: 1.5rem;
 }
+/* 菜单 */
+.menu{
+    height: 7.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* 菜单icon */
+.menu .menu-item i{
+    font-size: 3rem;
+}
+.menu .menu-item .el-icon-date::before{
+    color: #f1452e;
+}
+.menu .menu-item .el-icon-goods::before{
+    color: #ec8713;
+}
+.menu .menu-item .el-icon-star-off::before{
+    color: #ef668f;
+}
+/* 菜单文案 */
+.menu .menu-item .label{
+    display: block;
+    font-weight: bold;
+}
