@@ -1,7 +1,7 @@
 /* 漫画封面图 */
 .book{
     width: 11rem;
-    height: 16rem;
+    height: 18rem;
     margin-bottom: .75rem;
     position: relative;
 }
@@ -14,7 +14,6 @@
 }
 /* 书籍标题 */
 .tit{
-    color: #fff;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -29,4 +28,5 @@
     -webkit-text-overflow: ellipsis;
     text-overflow: ellipsis;
     font-size: 1.25rem;
+    text-align: left;
 }
