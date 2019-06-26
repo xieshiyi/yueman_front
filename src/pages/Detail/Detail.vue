@@ -77,7 +77,7 @@ export default {
       });
     },
     changeFixed: function(){
-      this.isFixed = !this.isFixed
+      // this.isFixed = !this.isFixed
     }
   },
   created: function() {
