@@ -38,7 +38,8 @@
             <li>
               <div class="item clearfix">
                 <div class="item-left overhidden">
-                  <img  :src="item.cover_image">
+                  <div class="img" :style="{background: 'url('+ item.cover_image +')',backgroundSize: 'cover'}"></div>
+                  <!-- <img :src="item.cover_image"> -->
                 </div>
                 <div class="item-right ">
                   <p class="overhidden title">第{{item.no}}话 {{item.title}}</p>

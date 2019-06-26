@@ -88,7 +88,7 @@ module.exports = new Promise((resolve, reject) => {
         ? utils.createNotifierCallback()
         : undefined
       }))
-
+      console.info(`Your application is running here: http://${devWebpackConfig.devServer.host}:${port}`)
       resolve(devWebpackConfig)
     }
   })

@@ -3,6 +3,7 @@
     <div class="dream_item">
       <img v-lazy="item.cover_image" class="dream_image" />
       <span class="tit">{{item.name}}</span>
+      <span class="tag">{{item.tags}}</span>
       <el-button class="delete_button">删除心愿</el-button>
     </div>
 </template>

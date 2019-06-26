@@ -1,26 +1,27 @@
 /* 头部控制菜单 */
 .menu-bar {
+  width: 100%;
   position: relative;
   background-color: #f8f7f7;
-  font-size: 2rem;
+  font-size: 1.6rem;
   border-bottom: 1px solid rgba(208,208,208,1);
 }
 .menu-bar .back {
   display: block;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2rem;
+  height: 2rem;
   position: absolute;
   background: url(https://static3w.kuaikanmanhua.com/static/img/mobile/icon_back_dd1086f.png) no-repeat 0 0;
   background-size: contain;
   left: 1.6rem;
-  top: 1.4rem;
+  top: 1rem;
   text-indent: -9999px;
 }
 .menu-bar .tit {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  padding: 1.2rem 9.2rem 1.2rem 5.2rem;
+  padding: 1rem 5rem;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
@@ -45,6 +46,10 @@
   display: block;
 }
 /* 操作栏 */
+.operator{
+  width: 100%;
+  background: #fff;
+}
 .operator .operator_top, .operator .operator_bottom{
   height: 5rem;
   border-bottom: 1px solid #e2dcdc;

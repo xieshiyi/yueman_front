@@ -15,34 +15,40 @@
     <!-- 书本 -->
     <p>最好看的，都在这里</p>
     <div class="book-container"  v-loading.fullscreen.lock="fullscreenLoading">
-      <template v-for="item in list">
-        <a v-bind:href="'#/contents/' + item._id" :key="item._id"><book :item="item"/></a>
+      <template v-for="(item, index) in list">
+        <a v-bind:href="'#/contents/' + item._id" :key="item._id"><book :item="item" :index="index"/></a>
       </template>
     </div>
+    <!-- <floatbutton /> -->
   </div>
 </template>
 <script>
 import CommonService from "@/service/common.js"
 import book from "@/components/Book/Book"
+import floatbutton from "@/components/FloatImgBtn/FloatImgBtn"
 export default {
   name: 'HomePage',
   data () {
     return {
-      list: []
+      list: [],
+      fullscreenLoading: false
     }
   },
   components: {
-    book
+    book,
+    floatbutton
   },
   methods: {
     _getBooks: function () {
       let t = this
       this.fullscreenLoading = true
       CommonService.getBookList().then(res => {
-        t.list = res.data.data.list
-        this.fullscreenLoading = false
+        if(res.data){
+          t.list = res.data.data.list
+          this.fullscreenLoading = false
+        }
       })
-    }
+    },
   },
   created: function () {
     this._getBooks()

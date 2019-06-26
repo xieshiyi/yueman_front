@@ -17,4 +17,3 @@ CommonService.getBookDetailsByNoAndId = function (_id, no) {
   return $http.post('/api/chapter/detail', {bookid: _id, no: no})
 }
 export default CommonService
-

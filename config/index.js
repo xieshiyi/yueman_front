@@ -11,7 +11,12 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      "/api": "http://localhost:6160/katong"
+      // "/api": "http://localhost:6160/katong"
+      "/api": {
+        target: "http://www.yueman.vip",
+        logLevel: 'debug',
+        changeOrigin: true
+      }
     },
 
     // Various Dev Server settings

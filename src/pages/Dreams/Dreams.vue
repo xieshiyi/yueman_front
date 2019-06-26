@@ -12,9 +12,9 @@
       </template>
     </div>
     <!-- 添加心愿按钮 -->
-    <div class="add_dream">
+    <!-- <div class="add_dream">
       <el-button class="add_dream_btn" @click="dialogVisible = true">添加心愿</el-button>
-    </div>
+    </div> -->
     <!-- 填写心愿表单弹窗 -->
     <el-dialog
       title="新心愿"

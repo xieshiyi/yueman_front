@@ -1,5 +1,5 @@
 <template>
-    <div class="book">
+    <div class="book" :style="{marginRight: (index+1) % 3 === 0 ? '0': '1.2rem'}">
       <img v-lazy="item.cover_image" class="book_image" />
       <span class="tit">{{item.name}}</span>
       <p class="tags">
@@ -10,6 +10,7 @@
 <script>
 export default {
   props: {
+    index: Number,
     item: {
       _id: String,
       name: String,
