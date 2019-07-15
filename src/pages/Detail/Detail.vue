@@ -12,9 +12,11 @@
           <img v-lazy="item" :key="item"/>
       </template>
     </div>
+    
     <!-- 上一话、下一话等操作 -->
     <div v-bind:class="{'operator': true, 'fixedBottom': isFixed}" >
       <div class="operator_top"></div>
+      <img class="zanshang" src="http://yueman-static.test.upcdn.net/static/forward.png" />
       <div class="operator_bottom">
         <div v-on:click="goPrev">上一篇</div>
         <div v-on:click="goNext">下一篇</div>
