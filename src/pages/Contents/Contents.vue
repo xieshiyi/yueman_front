@@ -57,16 +57,29 @@
         </ul>
       </div>
     </template>
+    <!-- 开始/继续阅读 -->
+    <div v-if="list && list.length">
+      <div class="start-btn" v-if="history">
+        <div class="title">{{history.no}} {{history.title}}</div>
+        <a class="btn" v-bind:href="'#/detail/' + history._id">继续阅读</a>
+      </div>
+      <div v-else class="start-btn">
+        <div class="title">{{sort === -1 ? list[list.length - 1].no : list[0].no}} {{sort === -1 ? list[list.length - 1].title : list[0].title}}</div>
+        <a class="btn" v-bind:href="'#/detail/' + (sort === -1 ? list[list.length - 1]._id : list[0]._id)">开始阅读</a>
+      </div>
+    </div>
   </div>
 </template>
 <script>
 import CommonService from "@/service/common.js"
 import book from "@/components/Book/Book"
+import local from "@/utils/localdata"
 export default {
   name: 'Contents',
   data () {
     return {
       list: [],
+      history: null,
       sort: -1,    //排序方式，默认是倒叙
       title: this.$route.params.bookname
     }
@@ -82,6 +95,8 @@ export default {
         t.list = data.data.list
         this.fullscreenLoading = false
       });
+      t.history = local.getLocalData('history')[t.$route.params.bookid]
+      console.log(t.history)
     },
     goback: function() {
         this.$router.go(-1)

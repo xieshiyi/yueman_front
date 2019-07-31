@@ -134,6 +134,9 @@ ul {
     -webkit-margin-end: 0;
     -webkit-padding-start: 0;
 }
+.content-container {
+    padding-bottom: 7rem;
+}
 .content-container ul li {
     width: 100%;
     padding: 0;
@@ -191,4 +194,30 @@ ul {
     color: #999;
     vertical-align: bottom;
     max-width: 5.2rem;
+}
+/* 阅读按钮 */
+.start-btn {
+    width: 100%;
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #e5e5e5;
+}
+.start-btn div {
+    height: 7rem;
+    line-height: 7rem;
+    text-align: center;
+}
+.start-btn .btn {
+    color: #fff;
+    background: #febd2c;
+    width: 220px;
+    display: block;
+    line-height: 7rem;
+}
+.start-btn .title {
+    flex: 1;
+    background: #fff;
 }

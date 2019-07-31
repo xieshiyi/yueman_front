@@ -28,6 +28,7 @@
 <script>
 import CommonService from "@/service/common.js"
 import Toast from "@/components/Toast/index"
+import local from "@/utils/localdata"
 export default {
   name: 'Contents',
   data(){
@@ -47,6 +48,13 @@ export default {
       this.fullscreenLoading = true
       CommonService.getBookDetails(t.$route.params.id).then(({data}) => {
         t.detail = data.data.chapter
+        let history = {}
+        history[data.data.chapter.bookid] = {
+          title: data.data.chapter.title,
+          no: data.data.chapter.no,
+          _id: data.data.chapter._id
+        }
+        local.setLocalData('history', history)
         this.fullscreenLoading = false
       });
     },
@@ -58,6 +66,13 @@ export default {
       this.fullscreenLoading = true
       CommonService.getBookDetailsByNoAndId(t.detail.bookid, t.detail.no-1).then(({data}) => {
         t.detail = data.data.chapter
+        let history = {}
+        history[data.data.chapter.bookid] = {
+          title: data.data.chapter.title,
+          no: data.data.chapter.no,
+          _id: data.data.chapter._id
+        }
+        local.setLocalData('history', history)
         this.fullscreenLoading = false
       });
     },
@@ -67,6 +82,13 @@ export default {
       CommonService.getBookDetailsByNoAndId(t.detail.bookid, t.detail.no+1).then(({data}) => {
         if(data.data.chapter){
           t.detail = data.data.chapter
+          let history = {}
+          history[data.data.chapter.bookid] = {
+            title: data.data.chapter.title,
+            no: data.data.chapter.no,
+            _id: data.data.chapter._id
+          }
+          local.setLocalData('history', history)
           this.fullscreenLoading = false
         }
         if(data.data.chapter === null){
