@@ -96,7 +96,6 @@ export default {
         this.fullscreenLoading = false
       });
       t.history = local.getLocalData('history')[t.$route.params.bookid]
-      console.log(t.history)
     },
     goback: function() {
         this.$router.go(-1)
